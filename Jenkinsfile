@@ -114,7 +114,7 @@ pipeline {
         always {
             script {
                 emailext(
-                    to: 'ahdoo.ling010519@gmail.com',
+                    to: 'ahdoo.ling010519@gmail.com, shaodoo@student.usm.my',
                     mimeType: 'text/html',
                     subject: 'Build #${BUILD_NUMBER} - ${JOB_NAME}',
                     body: """

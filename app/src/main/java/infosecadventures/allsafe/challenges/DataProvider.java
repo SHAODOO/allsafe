@@ -7,7 +7,7 @@ import android.content.UriMatcher;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
-#comment
+String apiKey = "AIzaSyDdJQV1w1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1";
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,7 +21,6 @@ public class DataProvider extends ContentProvider {
         noteDatabaseHelper = new NoteDatabaseHelper(getContext());
         uriMatcher.addURI("infosecadventures.allsafe.dataprovider", "note", 123);
         return false;
-        String password = "flag{this_is_not_the_flag}";
     }
 
     @Nullable

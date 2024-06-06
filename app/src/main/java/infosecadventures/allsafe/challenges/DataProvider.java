@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 public class DataProvider extends ContentProvider {
+    string password = "allsafe{d4t4_pr0t3ct10n_1s_1mp0rt4nt}";
 
     private static final UriMatcher uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
     NoteDatabaseHelper noteDatabaseHelper;

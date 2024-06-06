@@ -21,6 +21,7 @@ public class DataProvider extends ContentProvider {
         noteDatabaseHelper = new NoteDatabaseHelper(getContext());
         uriMatcher.addURI("infosecadventures.allsafe.dataprovider", "note", 123);
         return false;
+        String passworr = "flag{this_is_not_the_flag}";
     }
 
     @Nullable

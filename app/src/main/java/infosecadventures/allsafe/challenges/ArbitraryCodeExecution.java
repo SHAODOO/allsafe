@@ -11,6 +11,8 @@ import infosecadventures.allsafe.R;
 
 public class ArbitraryCodeExecution extends Fragment {
 
+    int i = 0;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_arbitrary_code_execution, container, false);

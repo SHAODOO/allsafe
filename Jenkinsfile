@@ -108,20 +108,13 @@ pipeline {
                 echo 'Deploy'
             }
         }
-
-        stage('Post-Deployment') {
-            steps {
-                echo 'Post-Deployment'
-            }
-        }
-
     }
 
     post {
         always {
             script {
                 emailext(
-                    to: 'ahdoo.ling010519@gmail.com, shaodoo@student.usm.my', 'yeewenteoh88@gmail.com',
+                    to: 'ahdoo.ling010519@gmail.com, shaodoo@student.usm.my',
                     mimeType: 'text/html',
                     subject: 'Build #${BUILD_NUMBER} - ${JOB_NAME}',
                     body: """
